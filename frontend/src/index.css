@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #111118;
+  --bg-card: #16161e;
+  --bg-hover: #1e1e28;
+  --border: #252530;
+  --border-light: #2e2e3d;
+  --pink-primary: #e8449a;
+  --pink-secondary: #c2185b;
+  --pink-soft: #f06292;
+  --pink-glow: rgba(232, 68, 154, 0.12);
+  --pink-glow-strong: rgba(232, 68, 154, 0.22);
+  --text-primary: #eeeef5;
+  --text-secondary: #8888a4;
+  --text-muted: #55556a;
+  --green: #4caf82;
+  --yellow: #f0b429;
+  --red: #e85454;
+  --blue: #5b8dee;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg-secondary); }
+::-webkit-scrollbar-thumb { background: var(--border-light); border-radius: 3px; }
+
+input, textarea, select, button {
+  font-family: 'Inter', sans-serif;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--pink-primary) !important;
+  box-shadow: 0 0 0 3px var(--pink-glow);
+}
+
+button:hover {
+  opacity: 0.88;
+  transition: opacity 0.15s;
+}
+
+select option {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+select {
+  background: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+}
